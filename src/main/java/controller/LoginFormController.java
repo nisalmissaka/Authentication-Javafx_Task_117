@@ -7,20 +7,14 @@ import javafx.scene.control.TextField;
 
 public class LoginFormController {
 
-    @FXML
-    private PasswordField PassWord;
 
-    @FXML
-    private TextField txtEmail;
-
-    @FXML
-    void btnSignInOnAction(ActionEvent event) {
-
+    public void btnSignUpOnAction(ActionEvent event) {
     }
 
-    @FXML
-    void btnSignUpOnAction(ActionEvent event) {
-
+    public void btnSignInOnAction(ActionEvent event) {
     }
 
+    public void emailOnAction(ActionEvent event) {
+
+    }
 }
