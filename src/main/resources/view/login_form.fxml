@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="356.0" prefWidth="554.0" style="-fx-background-color: #FFD8DF;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+
+   <children>
+
+
+      <AnchorPane layoutY="0.0" prefHeight="58.0" prefWidth="554.0" style="-fx-background-color: #B153D7;">
+         <children>
+            <Label layoutX="216.0" layoutY="7.0" text="Login" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold Italic" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+
+
+      <ImageView fitHeight="280.0" fitWidth="273.0" layoutX="3.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img.png" />
+         </image>
+      </ImageView>
+
+
+      <TextField fx:id="txt" layoutX="305.0" layoutY="115.0" onAction="#emailOnAction" prefHeight="31.0" prefWidth="211.0" promptText="Email" />
+
+
+      <PasswordField fx:id="txtPassword" layoutX="303.0" layoutY="187.0" prefHeight="31.0" prefWidth="211.0" promptText="Password" />
+
+
+      <Button layoutX="306.0" layoutY="281.0" onAction="#btnSignInOnAction" prefHeight="50.0" prefWidth="102.0" style="-fx-background-color: #249E94;" text="Sign-In" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="419.0" layoutY="281.0" onAction="#btnSignUpOnAction" prefHeight="50.0" prefWidth="95.0" style="-fx-background-color: #249E94;" text="Sign-Up" textFill="#fffcfc">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>
